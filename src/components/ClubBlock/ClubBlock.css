@@ -1,0 +1,22 @@
+.carousel::-webkit-scrollbar {
+    width: 20px!important;
+    display: block;
+}
+  
+  /* Track */
+  .carousel::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #1D283A !important; 
+    border-radius: 10px !important;
+
+  }
+   
+  /* Handle */
+  .carousel::-webkit-scrollbar-thumb {
+    background: #1D283A !important; 
+    border-radius: 10px !important;
+  }
+  
+  /* Handle on hover */
+  .carousel::-webkit-scrollbar-thumb:hover {
+    background: #3ABFF8 !important; 
+  }
