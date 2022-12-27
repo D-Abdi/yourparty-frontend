@@ -15,7 +15,7 @@ function App() {
         method: "get",
         url: "http://127.0.0.1:8000/clubs",
         responseType: "json",
-      }).then((response) => {
+      }).then((response) => {        
         setClubs(response.data);
       });
     }
@@ -25,8 +25,8 @@ function App() {
     <div className="container mx-auto px-5">
       <NavBar />
       {clubs && Object.keys(clubs).length > 0 ? (
-        Object.entries(clubs).map((club, key) => (
-          <ClubBlock club={club} />
+        clubs.map((club, index) => (
+          <ClubBlock club={club} key={index} />
         ))
       ) : (
         <div></div>
